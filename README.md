@@ -1,0 +1,1 @@
+## A collection of scripts I somewhat use to get or manipulate data in Go
