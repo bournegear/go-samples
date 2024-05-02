@@ -73,8 +73,10 @@ func main() {
 
 	notificationSchemeMap := hierarchyData.(map[string]interface{})
 
+	//Print the Notification Scheme Name
 	fmt.Println(notificationSchemeMap["name"])
 	fmt.Println("===============================")
+
 	eventList, ok := notificationSchemeMap["notificationSchemeEvents"].([]interface{})
 	if !ok {
 		fmt.Println("Error: notificationSchemeEvents is not a list")
@@ -108,7 +110,8 @@ func main() {
 			listOfRole = append(listOfRole, notifies)
 			// fmt.Println("Notifies: ", notifies)
 		}
-		fmt.Println("Roles: ", listOfRole, "\n")
+		fmt.Println("Roles: ", listOfRole)
+		fmt.Println("")
 	}
 
 }
